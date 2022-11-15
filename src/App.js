@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Route, Routes } from "react-router-dom";
+import HomePage from './Pages/HomePage/HomePage';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import MemesPage from './Pages/MemesPage/MemesPage';
+import MemeDetailPage from './Pages/MemeDetailPage/MemeDetailPage';
+import Navbar from './Components/Navbar/Navbar';
+
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+      <div>
+      
+      
+        <Navbar/>
+        
+        
+      
+      <main>
+      
+      <div>
+        <Routes>
+            <Route path='/' element={<HomePage/>}/>
+            <Route exact path='/about' element={<AboutPage/>}/>
+            <Route exact path='/memes' element={<MemesPage/>}/>
+            <Route exact path='/memes/:idMeme' element={<MemeDetailPage/>}/>
+        </Routes>
+      </div>  
+
+      
+        
+              
+      </main>
+      
     </div>
   );
 }

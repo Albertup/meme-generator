@@ -1,0 +1,49 @@
+.p-home {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 92vh;
+    background-image: url(./../../assets/img/backbropunk.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.c-home-title {
+  position: fixed;
+  top: 9vh;
+  width: 45vw;
+}
+.c-home-words {
+  position: fixed;
+  top: 23vh;
+  right: 49vw;
+  width: 20vw;
+}
+.c-home-brand {
+  position: fixed;
+  bottom: 3vh;
+  right: 3vw;
+  width: 6vw;
+}
+.c-app-logo {
+    height: 50vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .c-app-logo {
+      animation: App-logo-spin infinite 5s linear;
+    }
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+ 
